@@ -1,4 +1,4 @@
-module Date.Distance.I18n.Fr
+module Date.Distance.I18n.Es
     exposing
         ( LocaleConfig
         , locale
