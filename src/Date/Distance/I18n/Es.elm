@@ -4,7 +4,7 @@ module Date.Distance.I18n.Es
         , locale
         )
 
-{-| French locale.
+{-| Spanish locale.
 @docs LocaleConfig
 @docs locale
 -}
@@ -65,19 +65,19 @@ localeHelp distance =
             exact Minute i
 
         AboutXHours i ->
-            circa "aproximadamente " Hour i
+            circa "hace aprox. " Hour i
 
         XDays i ->
             exact Day i
 
         AboutXMonths i ->
-            circa "aproximadamente " Month i
+            circa "hace aprox. " Month i
 
         XMonths i ->
             exact Month i
 
         AboutXYears i ->
-            circa "aproximadamente " Year i
+            circa "hace aprox. " Year i
 
         OverXYears i ->
             circa "más de " Year i
@@ -173,9 +173,9 @@ masculine interval =
 pluralizeInterval : Interval -> String
 pluralizeInterval interval =
     if interval /= Month then
-        "s"
+        "es"
     else
-        ""
+        "s"
 
 
 circa : String -> Interval -> Int -> String
